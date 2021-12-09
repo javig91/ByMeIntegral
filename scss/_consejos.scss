@@ -1,0 +1,35 @@
+.nav-bar {
+
+        .nav-consejos {
+
+                li {
+                    margin-left: 0;
+                }
+        }
+}
+
+.consejos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+
+        .consejo-individual {
+            margin: 1.75rem 0;
+
+                h3 {
+                    font-size: 1.5rem;
+                    text-align: center;
+                    margin: 0 0 .5rem;
+                    padding: .35rem 0;
+                    border-radius: 50px;
+                    background-color: #C7BEA2;
+                }
+
+                p {
+                    width: 90%;
+                    margin: 0 auto;
+                    font-size: 1.15rem;
+                    // background-color: skyblue;
+                }
+        }
+}

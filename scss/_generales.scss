@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "BeautifullyDelicious";
+    src: url("../fonts/BeautifullyDelicious.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PeaceSans";
+    src: url("../fonts/Peace-Sans-otf.otf") format("opentype");
+    src: url("../fonts/Peace-Sans-ttf.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+    src: url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
+    src: url("../fonts/roboto/Roboto-Italic.ttf") format("truetype");
+    src: url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "banks";
+
+    src: url("../fonts/banks.ttf") format("truetype"),
+        url("../fonts/banks.otf") format("opentype"),
+        url("../fonts/banks.svg") format("svg"),
+        url("../fonts/banks.woff2") format("woff2"),
+        url("../fonts/banks.woff") format("woff"),
+        url("../fonts/banks.eot") format("eot");
+}
+
+@import "variables";
+
+
+.main {
+    width: 100%;
+    height: 100vh;
+    // background: linear-gradient(to top, rgba(248,194,211,0), rgba(248,194,211,1));
+    // background-color: $color-Principal;
+    // background-color: chocolate;
+}
+
+body {
+    max-width: 100%;
+    width: 100%;
+    font-size: 1.5em;
+    position: relative;
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // background: linear-gradient(to bottom, rgba(248,194,211,0), rgba(248,194,211,1));
+    background: linear-gradient(to bottom, rgba(248,194,211,0), $color-Principal);
+    // background: $color-Principal;
+}
+
+header {
+    // background: #001ea1;
+    padding: 2em 0;
+    text-align: center;
+    margin-bottom: .5em;
+    max-width: 100%;
+    width: 100%;
+}
+
+// section {
+//     background-color: darkturquoise;
+// }
+
+footer {
+    padding: 1.5rem 0;
+    text-transform: uppercase;
+    // background-color: rgb(148, 0, 79);
+    background-color: rgb(124, 73, 25);
+    text-align: center;
+
+        .container-footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-transform: none;
+
+                .contactoMicaela{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    padding-bottom: 2rem;
+
+                        p {
+                            text-align: center;
+                            padding-bottom: 1rem;
+                            text-transform: uppercase;
+                        }
+
+                        .redes {
+                            
+
+                                p {
+                                    text-transform: none;
+                                    text-align: left;
+                                }
+                        }
+                }
+
+                .contactoJavier{
+                    text-transform: uppercase;
+                }
+        }
+
+        p {
+            color: rgb(255, 255, 255);
+            letter-spacing: 2px;
+            font-size: .8rem;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+                a:hover,
+                a:focus {
+                    color: rgb(167, 167, 167);
+                }
+        }
+}
+
+// body {
+//     font-size: 1.5em;
+//     min-width: 0;
+//     min-height: 1vh;
+// }
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    background-color: red;
+        tr {
+
+                td {
+                    font-size: 1.1rem;
+                }
+        }
+}
+
+.micaela {
+    font-family: banks;
+}
+
+.div-logo,
+.logo-open {
+    max-width: 920px;
+    width: 90%;
+    margin: 0 auto;
+    font-family: $tipografia-Principal;
+    text-align: center;
+    user-select: none;
+    // line-height: .8;
+}
+
+.div-logo {
+    position: relative;
+    padding-bottom: 1rem;
+    // background-color: darkorange;
+
+        p {
+            font-size: 4.5em;
+
+                .div-logo-ByMe {
+                    font-family: Arial, Helvetica, sans-serif;
+
+                        .div-logo-By {
+                            font-size: 2.5rem;
+                        }
+                }
+        }
+}
+
+.logo-open {
+    position: fixed;
+    line-height: 1;
+    // font-size: 2.5rem;
+    opacity: .1;
+    margin: 2rem auto 0;
+    // max-width: 920px;
+    // width: 90%;
+    // margin: 0 auto;
+    // font-family: $tipografia-Principal;
+    // text-align: center;
+    // user-select: none;
+
+        p {
+            font-size: 4.5em;
+
+                .div-logo-ByMe {
+                    font-family: Arial, Helvetica, sans-serif;
+
+                        .div-logo-By {
+                            font-size: 2.5rem;
+                        }
+                }
+        }
+}
+
+
+.container,
+.container-footer {
+    // background-color: darkseagreen;
+    max-width: 920px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    align-items: center;
+}
+
+.container-flex,
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar a:hover,
+.nav-bar a:focus,
+.pagina-activa {
+    border-bottom: 2px solid #1792d2;
+}

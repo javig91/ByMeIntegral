@@ -1,0 +1,21 @@
+.ubicacion {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 0 50px;
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 0 .5rem;
+        }
+
+        iframe {
+            width: 90%;
+            height: 500px;
+            margin: 0 auto;
+            border: 5px double #000;
+            border-radius: 7px;
+        }
+}
